@@ -1,0 +1,83 @@
+/* Căn giữa toàn bộ nội dung và đặt màu nền tối */
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+/* Tiêu đề chính với font lớn, đổ bóng chữ để nổi bật */
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
+/* Footer chữ màu nhạt, font đơn giản */
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+/* Nền của từng nút trống tương ứng với ảnh */
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+/* Container chứa các nút trống, căn giữa và giãn cách */
+.set {
+  margin: 10% auto;
+}
+
+/* Hiệu ứng khi nút được nhấn: mờ và có bóng */
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+/* Class dùng để tô màu đỏ cho nội dung (nếu cần) */
+.red {
+  color: red;
+}
+
+/* Kiểu chung cho các nút trống */
+.drum {
+  outline: none; /* Bỏ viền mặc định khi nhấn */
+  border: 10px solid #404b69; /* Viền đậm */
+  font-size: 5rem; /* Kích thước chữ lớn */
+  font-family: "Arvo", cursive; /* Font đẹp */
+  line-height: 2;
+  font-weight: 900; /* Đậm */
+  color: #da0463; /* Màu chữ */
+  text-shadow: 3px 0 #dbedf3; /* Đổ bóng chữ */
+  border-radius: 15px; /* Bo tròn góc */
+  display: inline-block; /* Cho phép đặt các nút cạnh nhau */
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px; /* Giãn cách giữa các nút */
+  background-color: white; /* Nền trắng */
+}
